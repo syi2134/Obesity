@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+	<style type="text/css">
+	.nav{
+		display: flex;
+    	justify-content:flex-end;
+	}
+
+	ul li{
+    	display:inline;
+    	list-style: none;
+	}
+	li a{
+    	display:inline-block;
+    	color:white;
+    	text-align:center;
+    	padding:14px 16px;
+    	text-decoration:none;
+    	font-family:"Walter Turncoat";
+    	font-size:25px;
+	}
+
+   .dropdown{
+    	display:inline-block;
+    }
+   .content{
+    	display:none;
+    	position:absolute;
+	}
+   .content a{
+    	color:white;
+    	padding: 12px 16px;
+    	text-decoration: none;
+    	display: block;
+    	text-align:left;
+    }
+   .content a:hover{
+    	border-bottom:white solid 3px;
+		transition: all 0.3s ease-in-out 0s;
+    }
+   .dropdown:hover .content{
+    	display:block;
+    }
+
+   .active{
+	    border:white solid 1px;
+	}
+	#LOGO{
+		padding-right: 920px;
+		width: 350px;
+		height: 150px;
+	}
+	/*Text above this line in style are part of the nav bar*/
+	body{
+		background-color: black;
+		color: white;
+	}
+	*{
+		color: white;
+		font-family:"Walter Turncoat";
+	}
+	#TitleTopic{
+		display: flex;
+		justify-content: center;
+		font-size: 70px;
+		text-decoration: underline;
+	}
+	#BackgroundInfo{
+		font-size: 50px;
+		text-decoration: underline;
+	}
+	#BackgroundInfo:hover{
+		color:black;
+		background-color: white;
+	}
+	#InfoBox1{
+		font-size: 35px;
+	}
+	#InfoBox1:hover{
+		border:white solid 2px;
+		font-size: 36px;
+		transition: all 0.3s ease-in-out 0s;
+		color:black;
+		background-color: white;
+	}
+	.Imgs{
+		text-align: center;
+	}
+	img{
+		width:100%;
+		height:500px;
+	}
+	#Parent2{
+		display: flex;
+	}
+	.Child2{
+		font-size: 30px;*/
+		text-align: justify;
+		width: calc((100% / 3) - 10px);
+	}
+	.Child2:hover{
+		border:white solid 2px;
+		font-size: 31px;
+		transition: all 0.3s ease-in-out 0s;
+		color:black;
+		background-color: white;
+	}
+	#SubTopicStats{
+		font-size: 50px;
+		text-decoration: underline;
+	}
+	#SubTopicStats:hover{
+		color:black;
+		background-color: white;
+	}
+	.EndInfo{
+		font-size: 35px;
+	}
+	.EndInfo:hover{
+		border:white solid 2px;
+		font-size: 36px;
+		transition: all 0.3s ease-in-out 0s;
+		color:black;
+		background-color: white;
+	}
+	#Link1{
+		color: lightblue;
+		font-size: 35px;
+	}
+	</style>
+</head>
+<body>
+	<ul class="nav">
+	<img id="LOGO" src="Obesity Logo Option A.png" width="200px" height="100px">
+ 	<li><a href="menu1-home.html">Home</a></li>
+ 	<li class = "dropdown"><a class="dropbtn" >Causes</a>
+   	<div class= "content">
+    	<a href="menu2-phys new.html">Physical</a>
+    	<a href="menu2-psyco new.html">Psycological</a>
+   	</div>
+ 	</li>
+  	<li class = "dropdown"><a class="dropbtn" >Effects</a>
+   	<div class= "content">
+    	<a href="menu3-phys.html" class="active">Physical</a>
+    	<a href="menu3-psyco.html">Psycological</a>
+   	</div>
+ 	</li>
+  	<li class = "dropdown"><a class="dropbtn" href="menu4.html">Solutions</a>
+   	<div class= "content">
+    	<a href="menu4a.html">Diet Choices</a>
+    	<a href="menu4b.html">Exercise Routine</a>
+   	</div>
+ 	</li>
+ 	<li><a href="menu1-contact.html">Contacts</a></li>
+	</ul>
+	<img src="http://www.medaus.com/wp-content/uploads/2014/06/obese-children-850x400.jpg">
+	<!-- Text above this line in the body is part of the nav bar -->
+
+	<p id="TitleTopic">Physical Effects of Obesity</p>
+
+	<p id="BackgroundInfo">Brief Background of Obesity</p>
+
+	<p id="InfoBox1">Obesity is a huge problem, but it hasn't always been like this. It all started in the 1950's, and the problem started to grow exponentially bigger and worse. Our portion sizes today are around FOUR times larger than they were in the 1950's. Sugary drinks (like soda) have exploded in the "worse" way, growing from an average of 7oz to a staggering 42 oz today in only 60 years.</p>
+
+	<table width="100%">
+ 		<tr>
+  			<td width="33%" class="Imgs"><img src="http://lipedemaliposuctioncenter.com/wp-content/uploads/2015/11/Overweight-Joint-Problems-Lipodema-Liposuction-Center-236x300.jpg"></td>
+  			<td width="33%" class="Imgs"><img src="https://www.cdc.gov/bloodpressure/images/blood-pressure.gif"></td>
+  			<td width="33%" class="Imgs"><img src="http://spirulinapowdermarket.com/sites/default/files/spirulinahealthbenefitsdiabetes2.jpg"></td>
+ 		</tr>
+	<table>
+
+	<div id="Parent2">
+		<div class="Child2">Joint problems are very common as a result of a person having obesity. Being obese generally means being heavier or having more weight, which applies more pressure to your joints.</div>
+		<div class="Child2">High blood pressure is also very common in patients who are obese. An obese person has more fat tissues in their body, which means more oxygen and nutrients are required to survive, which also increases the heart's workload because more and more blood needs to be pumped to survive.</div>
+		<div class="Child2">Diabetes is a common sight in people who are obese, as obesity is the major cause of type 2 diabetes. Diabetes is associated with  insulin resistance, which results in unusually high blood sugar levels. High blood sugar can be disastrous, and even severely damage the eyes, kidneys and nerves while also doubling the risk of a heart attack or stroke.</div>
+	</div>
+	<p id="SubTopicStats">Statistics of Obesity</p>
+	<p class="EndInfo">Obesity is the #2 leading cause of preventable deaths in the US. About 300,000 deaths per year are caused by obesity (National Institutes of Health), which points out that obesity is becoming a huge and serious problem. According to the Centers for Disease Control and Prevention (CDC), the annual medical cost for obesity in 2008 in the US was $147 billion (Almost a fifth of the US Military's budget of $824.7 billion!), and the cost for medical care for obese patients are estimated to be $1,429 higher than patients without obesity. As of September 1st, 2016, the state with the highest obesity rate is Louisiana with 36.2% of adults living there being obese. The lowest is currently Colorado with 20.2% obesity rate of adults. Four states have 35%+ obesity rates in adults, 25 states have 30%+, and all 50 states are above 20%. For the first time in 7 years, obesity rates have declined in Minnesota, Montana, New York and Ohio but obesity rates have unfortunately increased in Kansas and Kentucky. </p>
+	<p class="EndInfo">For an interactive map of the US along with it's obesity statistics, click below:</p>
+	<a href="https://stateofobesity.org/adult-obesity/" id="Link1">Obesity Statistics</a>
+
+</body>
+</html>

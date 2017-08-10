@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+	<style type="text/css">
+body {
+    background-color:black;
+}
+img{
+	width:100%;
+	height:500px;
+}
+
+.nav{
+	display: flex;
+    justify-content:flex-end;
+}
+
+ul li{
+    display:inline;
+    list-style: none;
+}
+li a{
+    display:inline-block;
+    color:white;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-family:"Walter Turncoat";
+    font-size:25px;
+}
+
+.dropdown{
+    display:inline-block;
+}
+.content{
+    display:none;
+    position:absolute;
+}
+.content a{
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align:left;
+}
+.content a:hover{
+    border-bottom:white solid 3px;
+	transition: all 0.3s ease-in-out 0s;
+}
+.dropdown:hover .content{
+    display:block;
+}
+
+.active{
+	border:white solid 1px;
+}
+h1{
+	color:white;
+	font-family:"Walter Turncoat";
+	text-align:center;
+	font-size:50px;
+}
+#infobox{
+	background-color: black;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+	padding-right:20px;
+}
+.info{
+	text-align:center;
+	font-size:25px;
+	width:100%;
+	height:120px;
+	margin:10px;
+    word-wrap: break-word;
+    color:white;
+    font-family:"Walter Turncoat";
+}
+.border{
+	border:white solid 1px;
+}
+.border:hover{
+	color:black;
+	background-color:white;
+	transition:1s;
+}
+#LOGO{
+		padding-right: 920px;
+		width: 350px;
+		height: 150px;
+	}
+	</style>
+</head>
+<body>
+	<ul class="nav">
+	<img id="LOGO" src="Obesity Logo Option A.png" width="200px" height="100px">
+ <li><a href="menu1-home.html">Home</a></li>
+ <li class = "dropdown"><a class="dropbtn" >Causes</a>
+   <div class= "content">
+    <a href="menu2-phys new.html" class="active">Physical</a>
+    <a href="menu2-psyco new.html">Psycological</a>
+   </div>
+ </li>
+  <li class = "dropdown"><a class="dropbtn" >Effects</a>
+   <div class= "content">
+    	<a href="menu3-phys.html">Physical</a>
+    	<a href="menu3-psyco.html">Psycological</a>
+   </div>
+ </li>
+  <li class = "dropdown"><a class="dropbtn" href="menu4.html">Solutions</a>
+   <div class= "content">
+    <a href="menu4a.html">Diet Choices</a>
+    <a href="menu4b.html">Exercise Routine</a>
+   </div>
+ </li>
+ <li><a href="menu1-contact.html">Contacts</a></li>
+</ul>
+<img src="http://www.medaus.com/wp-content/uploads/2014/06/obese-children-850x400.jpg">
+
+<h1>PHYSICAL CAUSES TO OBESITY</h1>
+
+	<div id="infobox">
+		<div class="info"><div class="border">AGE</div>
+Obesity is possible for people of all ages but the older you are, the higher chance of obesity. As you grow older, hormones change and you tend to follow a less active lifestyle. Muscles also decrease with age thus lowering metabolism.
+</div>
+		<div class="info"><div class="border">ACTIVITY/ENVIRONMENT</div>
+Exercising burns calories and if you are not very active, you do not burn as much calories. People tend to gain weight easily when someone close to them either family or friend is obese.
+</div>
+		<div class="info"><div class="border">DISEASES/MEDICATION</div>
+For some people, medical issues may be the cause of obesity. Diseases such as Prader-Willi syndrome, Cushing's syndrome, and other conditions may cause a decrease in activity. Some medications given have also been know to lead to obesity due to its side effects. Medicine such as antidepressants, anti-seizure medications, diabetes medications, etc. can lead to weight gain if you do not compensate through diet or activity.
+</div><br><br><br>
+		<div class="info"><div class="border">GENETICS</div>
+Genes increase the risk of weight gain and interact with other risk factors such as unhealthy diets and inactive lifestyles.Genes may also affect the amount of body fat you have and where they are distributed. It plays a role in how efficiently your body converts food into energy and how efficiently your body burns calories during exercise.
+</div>
+	</div>
+
+</body>
+</html>

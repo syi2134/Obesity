@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cinzel|Walter+Turncoat" rel="stylesheet">
+	<style type="text/css">
+		body{background-repeat: no-repeat;background-color:black;padding:5px;}
+	    ul li{display:inline;list-style: none;}
+	    ul{background:black;margin-top:0px;margin-bottom:10px;}
+	    li a{display:inline-block;color:white;text-align:center;padding:14px 16px;text-decoration:none;font-size:12pt;}
+	    .dropdown{display:inline-block;}
+	    .content{display:none;position:absolute;background-color:black;min-width:160px;box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);}
+	    .content a{color:black;padding: 12px 16px;text-decoration: none;display: block;text-align:left;}
+	    .dropdown:hover .content{display:block;}
+	    .active{border-bottom:white solid 3px;}
+	    #about{background-color:black;color:white;height:50px;font-size:30pt;text-decoration:underline;padding:10px;text-align:center;}
+	    #info{display:flex;width:100%;}
+	    #p1,#p2,#p3,#p4{background-color:#d9d9d9;margin:10px;border-radius:10px;padding:5px;font-family: 'Cinzel', serif;width:40%;display:flex;align-items:center;justify-content:space-between;}
+	    img{width:100px;height:100px;margin-right:10px;}
+	    #modifier:hover{color:white;}
+	    #mod:hover{background-color:#bfbfbf;}
+	    #box{text-align:center;color:white;flex:1;font-family:"Walter Turncoat";text-decoration:none;padding-left:125px;padding-right:125px;font-size:13pt;}
+		#box:hover{border-bottom:white solid 3px;transition: all 0.3s ease-in-out 0s;display:inline-block;background-color:white;color:black;}
+		#box2{color:white;font-family:"Walter Turncoat";text-decoration:none;flex:1;width:178%;background-color:black;font-size:12pt;}
+		#box2:hover,#box3:hover,#box4:hover{border-bottom:white solid 3px;transition: all 0.3s ease-in-out 0s;background-color:white;color:black;}
+		nav{display:flex;flex-direction:row;margin-top:20px;justify-content:space-around;margin-top:12px;margin-bottom:15px;}
+	    /*li > #logo{width:75px;padding:10px;height:20px;}*/
+	    @keyframes about{0%{width:0px;color:black;} 100%{width:100%;color:white;}}
+	    #about{animation:about 1.5s linear 0s normal forwards;}
+	    #calendar > img{width:70%;height:30%;align-items:center;margin-left:15%;margin-right:15%;}
+	    #box3{color:white;font-family:"Walter Turncoat";text-decoration:none;flex:1;width:181%;background-color:black;font-size:12pt;}
+	    #box4{color:white;font-family:"Walter Turncoat";text-decoration:none;flex:1;width:166.625%;background-color:black;font-size:12pt;}
+	    #change{text-decoration:underline;color:black;}
+	    @media screen and (max-width:1398px){
+            #info{flex-wrap:wrap;}
+        }
+        @media screen and (max-width:900px){
+            #p1,#p2,#p3,#p4{padding-left:0;padding-right:0;flex-wrap:wrap;}
+        }
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<!--<li><img src="#" id="logo"></li>-->
+		 	<li><a href="menu1-home.html" id="box">HOME</a></li>
+		 	<li class="dropdown"><a class="dropbtn" id="box">CAUSES</a>
+			   	<div class="content">
+				    <a href="menu2-phys new.html" id="box2">PHYSICAL</a>
+				    <a href="menu2-psyco new.html" id="box2">PSYCHOLOGICAL</a>
+			   	</div>
+		 	</li>
+		 	<li class="dropdown"><a class="dropbtn" id="box">EFFECTS</a>
+			   	<div class="content">
+				    <a href="menu3-phys.html" id="box3">PHYSICAL</a>
+				    <a href="menu3-psyco.html" id="box3">PSYCHOLOGICAL</a>
+			   	</div>
+		 	</li>
+		 	<li class="dropdown"><a class="dropbtn" href="menu4.html" id="box">SOLUTIONS</a>
+			   	<div class="content">
+				    <a href="menu4a.html" id="box4">DIET CHOICES</a>
+				    <a href="menu4b.html" id="box4">EXERCISE ROUTINE</a>
+			   	</div>
+		 	</li>
+		 	<li><a href="menu1-contact.html" id="box" class="active">CONTACT</a></li>
+		</ul>
+	</nav><hr>
+	<div id="about">About Us</div>
+	<div id="info">
+		<div id="p1">
+		<div class="panel">
+			<h3>BaoQi Chen</h3><hr>
+		    <p>A productive student who works well with others. </p><h5><span id="change">Contact Info</span> -<br> BCHEN3483@BAYSIDEHIGHSCHOOL.ORG</h5>
+		</div>
+		<img src="http://www.pngall.com/wp-content/uploads/2016/05/Broccoli-Free-PNG-Image.png">
+		</div>
+		<div id="p2">
+		<div class="panel">
+			<h3>Hao Jun Chen</h3><hr>
+		    <p>Aspiring software developer with knowledge in Python, HTML, CSS.</p><h5><span id="change">Contact Info</span> -<br> HCHEN5890@BAYSIDEHIGHSCHOOL.ORG</h5>
+		</div>
+		<img src="https://cdn.head-fi.org/a/7545802_thumb.png">
+		</div>
+		<div id="p3">
+		<div class="panel">
+			<h3>Sadia Ishak</h3><hr>
+		    <p>A motivated student who works hard to accomplish her goal. Love to assisit people and play basketball.</p><h5><span id="change">Contact Info</span> -<br> SISHAK4372@BAYSIDEHIGHSCHOOL.ORG</h5>
+		</div>
+		<img src="https://pbs.twimg.com/profile_images/336731242/plumeria.png">
+		</div>
+		<div id="p4">
+		<div class="panel">
+			<h3>Sung Yi</h3><hr>
+		    <p>Interested in programming websites using CSS, HTML and Javascript.</p><h5><span id="change">Contact Info</span> -<br> SYI7190@BAYSIDEHIGHSCHOOL.ORG</h5>
+		</div>
+		<img src="http://www.freepngimg.com/download/rock/8-2-rock-png-picture.png">
+		</div>
+	</div><hr><br>
+	<div id="calendar">
+		<img src="Logo.png">
+	</div>
+
+
+
+</body>
+</html>

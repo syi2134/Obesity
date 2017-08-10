@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+	<style type="text/css">
+	.nav{
+		display: flex;
+    	justify-content:flex-end;
+	}
+
+	ul li{
+    	display:inline;
+    	list-style: none;
+	}
+	li a{
+    	display:inline-block;
+    	color:white;
+    	text-align:center;
+    	padding:14px 16px;
+    	text-decoration:none;
+    	font-family:"Walter Turncoat";
+    	font-size:25px;
+	}
+
+   .dropdown{
+    	display:inline-block;
+    }
+   .content{
+    	display:none;
+    	position:absolute;
+	}
+   .content a{
+    	color:white;
+    	padding: 12px 16px;
+    	text-decoration: none;
+    	display: block;
+    	text-align:left;
+    }
+   .content a:hover{
+    	border-bottom:white solid 3px;
+		transition: all 0.3s ease-in-out 0s;
+    }
+   .dropdown:hover .content{
+    	display:block;
+    }
+   .active{
+	    border:white solid 1px;
+	}
+	#LOGO{
+		padding-right: 920px;
+		width: 350px;
+		height: 150px;
+	}
+	/*Text above this line in style are part of the nav bar*/
+	#TitleTopic{
+		display: flex;
+		justify-content: center;
+		font-size: 70px;
+		text-decoration: underline;
+	}
+	#BackgroundInfo{
+		font-size: 50px;
+		text-decoration: underline;
+	}
+	#BackgroundInfo:hover{
+		color:black;
+		background-color: white;
+	}
+	#InfoBox1{
+		font-size: 35px;
+	}
+	#InfoBox1:hover{
+		border:white solid 2px;
+		font-size: 36px;
+		transition: all 0.3s ease-in-out 0s;
+		color:black;
+		background-color: white;
+	}
+	.pics{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 6px;
+	}
+	#Parent2{
+		display: flex;
+	}
+	.Child2{
+		display: flex;
+		font-size: 30px;*/
+		justify-content: center;
+		padding: 5px;
+	}
+	.Child2:hover{
+		border:white solid 2px;
+		font-size: 31px;
+		padding: 4px;
+		transition: all 0.3s ease-in-out 0s;
+		color:black;
+		background-color: white;
+	}
+	#SubTopicStats{
+		font-size: 50px;
+		text-decoration: underline;
+	}
+	#SubTopicStats:hover{
+		color:black;
+		background-color: white;
+	}
+	.EndInfo{
+		font-size: 35px;
+	}
+	.EndInfo:hover{
+		border:white solid 2px;
+		font-size: 36px;
+		transition: all 0.3s ease-in-out 0s;
+		color:black;
+		background-color: white;
+	}
+	#EndInfoThing{
+		text-decoration: underline;
+	}
+	#Link1{
+		font-size: 35px;
+		color: lightblue;
+	}
+	body{
+		background-color: black;
+	}
+	*{
+		color: white;
+		font-family:"Walter Turncoat";
+	}
+	img{
+		width:100%;
+		height:500px;
+	}
+	</style>
+</head>
+<body>
+	<ul class="nav">
+	<img id="LOGO" src="Obesity Logo Option A.png" width="200px" height="100px">
+ 	<li><a href="menu1-home.html">Home</a></li>
+ 	<li class = "dropdown"><a class="dropbtn" >Causes</a>
+   	<div class= "content">
+    	<a href="menu2-phys new.html">Physical</a>
+    	<a href="menu2-psyco new.html">Psycological</a>
+   	</div>
+ 	</li>
+  	<li class = "dropdown"><a class="dropbtn" >Effects</a>
+   	<div class= "content">
+    	<a href="menu3-phys.html">Physical</a>
+    	<a href="menu3-psyco.html" class="active">Psycological</a>
+   	</div>
+ 	</li>
+  	<li class = "dropdown"><a class="dropbtn" href="menu4.html">Solutions</a>
+   	<div class= "content">
+    	<a href="menu4a.html">Diet Choices</a>
+    	<a href="menu4b.html">Exercise Routine</a>
+   	</div>
+ 	</li>
+ 	<li><a href="menu1-contact.html">Contacts</a></li>
+	</ul>
+	<img id="cover" src="http://www.medaus.com/wp-content/uploads/2014/06/obese-children-850x400.jpg">
+	<!-- Text above this line in the body is part of the nav bar -->
+
+	<p id="TitleTopic">Psychological Effects of Obesity</p>
+
+	<p id="BackgroundInfo">Brief Background of Obesity</p>
+
+	<p id="InfoBox1">Obesity is a huge problem, but it hasn't always been like this. It all started in the 1950's, and the problem started to grow exponentially bigger and worse. Our portion sizes today are around FOUR times larger than they were in the 1950's. Sugary drinks (like soda) have exploded in the "worse" way, growing from an average of 7oz to a staggering 42 oz today in only 60 years.</p>
+
+	<table>
+		<tr>
+			<td><img class="pics" src="http://myinsuranceshark.com/wp-content/uploads/2016/02/Nationwide-vanishing-deductible.jpg" style="width:500px;height:500px;background-color:white;"></td>
+			<td><img class="pics" src="https://www.cmu.edu/news/stories/archives/2015/june/images/biasblindspot_853x480-min.jpg" style="width:500px;height:500px;"></td>
+			<td><img class="pics" src="http://2.bp.blogspot.com/-zhWYEmNId6M/UTKPPbk6UNI/AAAAAAAAAHM/vXDGXYrIK7s/s1600/no+love-+crossed+out+heart.png" style="width:450px;height:500px;"></td>
+		</tr>
+	</table>
+
+	<div id="Parent2">
+		<div class="Child2">It isn't uncommon for obese patients to have little money to spare because generally, obese patients tend to spend more time away from work seeking medical attention, and also tend to spend more money on medications or treatments than non-obese people.</div>
+		<div class="Child2">Bias/Discrimination is also very common, because you are the "odd ball". You are slow and tend to seek medical attention frequently, which can direct attention and glares to yourself in unwanted ways. People may see you as "unfit" for society.</div>
+		<div class="Child2">Having little or no relationships is also very common because of many  factors, including wealth and your "social appearance". Having no money makes it hard to support relationships, which is one of the major problems with obesity ($). Also, you may be slower and look different from others, which may deter people from having a relationship with them. (Please don't take this the wrong way)</div>
+	</div>
+	<p id="SubTopicStats">Statistics of Obesity</p>
+	<p class="EndInfo">Obesity is the #2 leading cause of preventable deaths in the US. About 300,000 deaths per year are caused by obesity (National Institutes of Health), which points out that obesity is becoming a huge and serious problem. According to the Centers for Disease Control and Prevention (CDC), the annual medical cost for obesity in 2008 in the US was $147 billion (Almost a fifth of the US Military's budget of $824.7 billion!), and the cost for medical care for obese patients are estimated to be $1,429 higher than patients without obesity. As of September 1st, 2016, the state with the highest obesity rate is Louisiana with 36.2% of adults living there being obese. The lowest is currently Colorado with 20.2% obesity rate of adults. Four states have 35%+ obesity rates in adults, 25 states have 30%+, and all 50 states are above 20%. For the first time in 7 years, obesity rates have declined in Minnesota, Montana, New York and Ohio but obesity rates have unfortunately increased in Kansas and Kentucky. </p>
+	<p class="EndInfo" id="EndInfoThing">For an interactive map of the US along with it's obesity statistics, click below:</p>
+	<a href="https://stateofobesity.org/adult-obesity/" id="Link1">Obesity Statistics</a>
+</body>
+</html>
