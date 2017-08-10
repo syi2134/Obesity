@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cinzel|Walter+Turncoat" rel="stylesheet">
+    <style type="text/css">
+        li a{display:inline-block;color:white;padding:14px 16px;text-decoration:none;font-size:12pt;}
+        .content{display:none;position:absolute;min-width:160px;box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);background-color:black;}
+        body{background-repeat: no-repeat;background-color:black;padding:5px;}
+        ul li{display:inline;list-style:none;}
+        .content{display:none;}
+        .dropdown{display:inline-block;}
+        .dropdown:hover .content{display:block;}
+        li .active{border-bottom:white solid 3px;}
+        #obesity{width:98%;height:165px;background-color:white;font-size:80pt;text-align:center;margin:1%;border-radius:10px;font-family:'Amatic SC';background-color:rgba(255,255,255,0);color:white;margin-bottom:0px;}
+        #desc{width:98%;height:85px;margin:1%;border:solid rgba(10,10,100,0.3);padding:7px;background-color:lightgray;font-size:16pt;}
+        img{width:70%;height:60%;margin-bottom:15px;}
+        h3{background-color:rgba(0,0,0,0);text-align:center;}
+        nav{display:flex;flex-direction:row;margin-top:0px;justify-content:space-around;flex:1;}
+        #box{text-align:center;color:white;flex:1;font-family:"Walter Turncoat";text-decoration:none;padding-left:125px;padding-right:125px;font-size:13pt;}
+        #box:hover{border-bottom:white solid 3px;transition: all 0.3s ease-in-out 0s;display:inline-block;background-color:white;color:black;}
+        #main{width:100%;height:500px;}
+        #box2{color:white;font-family:"Walter Turncoat";text-decoration:none;width:178%;background-color:black;font-size:12pt;}
+        #box2:hover,#box3:hover,#box4:hover{border-bottom:white solid 3px;transition: all 0.3s ease-in-out0s;background-color:white;color:black;}
+        #slides {position: relative;height:500px;padding:0px;margin:0px;list-style-type:none;width:70%;margin-left:15%;margin:right:15%;}
+        @keyframes slides{0%,15%{background:url("img2.jpg") 100%;background-repeat:no-repeat;background-size:cover;} 50%,100%{background:url("Logo.png") 100%;background-repeat:no-repeat;background-size:cover;}}
+        #slides{animation:slides 9s linear 0s infinite normal;}
+        @media screen and (max-width:944px){
+            #desc{font-size:14pt;}
+        }
+        @media screen and (max-width:648px){
+            #desc{font-size:12pt;}
+        }
+        @media screen and (max-width:462px){
+            #desc{font-size:10pt;}
+        }
+        #box3{color:white;font-family:"Walter Turncoat";text-decoration:none;flex:1;width:181%;background-color:black;font-size:12pt;}
+        #box4{color:white;font-family:"Walter Turncoat";text-decoration:none;flex:1;width:166.625%;background-color:black;font-size:12pt;}
+        .bmi{text-align:center;}
+        #output, h1{color:white;text-align:center;}
+        #space{background:url("img2.jpg") 100% fixed;background-repeat:no-repeat;background-size:cover;padding:500px;}
+    </style>
+    <script type="text/javascript">
+        function bmi(){
+            var n1= document.getElementById("w");
+            var n2= document.getElementById("h");
+            var op = document.getElementById("output");
+            var ans = (parseFloat(n1.value) / Math.pow(parseFloat(n2.value),2)) * 703;
+            var a = ans.toFixed(1);
+            op.innerHTML= a;
+        }
+    </script>
+</head>
+<body>
+    <nav>
+      <ul>
+            <!--<li><img src="Logo.png" id="logo"></li>-->
+            <li><a href="menu1-home.html" id="box" class="active">HOME</a></li>
+            <li class="dropdown"><a class="dropbtn" id="box">CAUSES</a>
+                <div class="content">
+                    <a href="menu2-phys new.html" id="box2">PHYSICAL</a><br>
+                    <a href="menu2-psyco new.html" id="box2">PSYCHOLOGICAL</a>
+                </div>
+            </li>
+            <li class="dropdown"><a class="dropbtn" id="box">EFFECTS</a>
+                <div class="content">
+                    <a href="menu3-phys.html" id="box3">PHYSICAL</a><br>
+                    <a href="menu3-psyco.html" id="box3">PSYCHOLOGICAL</a>
+                </div>
+            </li>
+            <li class="dropdown"><a class="dropbtn" href="menu4.html" id="box">SOLUTIONS</a>
+                <div class="content">
+                    <a href="menu4a.html" id="box4">DIET CHOICES</a><br>
+                    <a href="menu4b.html" id="box4">EXERCISE ROUTINES</a>
+                </div>
+            </li>
+            <li><a href="menu1-contact.html" id="box">CONTACTS</a></li>
+        </ul>
+    </nav><hr>
+    <div id="obesity">Obesity</div>
+    <!--<img src="test_bg.jpg" id="main">-->
+    <div id="desc">Obesity is a disease where the body has too much adipose tissue which is an organ that increases the levels of circulating fatty acids and inflammation. Basically, its when you have too much body fat. This disease affects millions of adults in America and was associated with over 100,000 deaths yearly. </div>
+    <center>
+    <img src="Logo.png">
+    </center>
+<div id="space"></div>
+<h1>BMI CALCULATOR</h1>
+<h1> (Weight in Pounds / (Height in Inches)^2) * 703</h1>
+    <div style="text-align:center;">
+    <input type="text" id="w" placeholder="Weight">
+    <input type="text" id="h" placeholder="Height">
+    </div>
+    <br>
+    <div class="bmi">
+    <button onclick="bmi()">Display BMI</button>
+    <div id="output"></div>
+    </div>
+    <br><br>
+    <center>
+    <img src="https://www.therapypoints.com/wp-content/uploads/2016/08/bmi.jpg"> 
+    </center>
+</body>
+</html>
